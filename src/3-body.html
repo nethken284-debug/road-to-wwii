@@ -1,0 +1,30 @@
+<header class="topbar">
+  <div class="wrap">
+    <button class="brand" id="brand" type="button" aria-label="Back to the route map">
+      <b>Road to <span>WWII</span></b>
+      <small>第二次世界大戰的成因 · The Causes of World War II</small>
+    </button>
+    <div class="xp" title="Your XP">
+      <span class="medal" id="xpLv">1</span>
+      <span class="rank" id="xpRank">Rookie</span>
+      <span class="bar"><i id="xpBar"></i></span>
+      <span class="mono" id="xpNum">0 XP</span>
+    </div>
+    <button class="iconbtn" id="zhBtn" type="button" aria-pressed="true" title="Chinese hints on/off 中文提示">中</button>
+    <button class="iconbtn" id="sndBtn" type="button" aria-pressed="true" title="Sound on/off">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+    </button>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <nav class="zones" role="tablist" aria-label="Zones">
+      <button role="tab" type="button" data-zone="review" aria-selected="true">Review<span class="zh">溫習區</span></button>
+      <button role="tab" type="button" data-zone="quiz" aria-selected="false">Quiz<span class="zh">測驗區</span></button>
+      <button role="tab" type="button" data-zone="progress" aria-selected="false">Progress<span class="zh">進度</span></button>
+    </nav>
+    <div id="view"></div>
+  </div>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
